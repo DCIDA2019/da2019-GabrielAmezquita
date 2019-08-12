@@ -1,0 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt 
+from funcion import f2 as f2s
+%matplotlib inline
+
+x=np.arange(0,10,0.1)
+y=x**2
+z=np.abs((x**2)*(np.cos(x)))
+plt.plot(x,y,label='x^2')
+plt.plot(x,z,label="cos(x)")
+plt.legend(loc='upper left')
+plt.show()
